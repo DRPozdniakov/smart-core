@@ -1,0 +1,4 @@
+mcp[cli]
+neo4j
+sentence-transformers
+PyYAML

@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "smart-core": {
+      "type": "stdio",
+      "command": "/absolute/path/to/python.exe",
+      "args": [
+        "/absolute/path/to/Fers/smart_core/smart-core-mcp/server.py"
+      ],
+      "env": {
+        "DB_URI": "neo4j://127.0.0.1:7687",
+        "DB_USER": "neo4j",
+        "DB_PASSWORD": "YOUR_NEO4J_PASSWORD_HERE",
+        "DB_NAME": "smart-core"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "database": {
+    "uri": "bolt://127.0.0.1:7687",
+    "user": "neo4j",
+    "password": "YOUR_NEO4J_PASSWORD",
+    "name": "smart-core"
+  },
+  "embedding": {
+    "model": "all-MiniLM-L6-v2",
+    "dimensions": 384
+  },
+  "processing": {
+    "chunk_max_tokens": 512,
+    "project_docs_path": "../docs"
+  }
+}
