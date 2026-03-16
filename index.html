@@ -1008,58 +1008,64 @@
             </div>
         </div>
 
-        <!-- ═══════════════════ SLIDE 4: MCP TOOLS ═══════════════════ -->
+        <!-- ═══════════════════ SLIDE 4: MEASURED IMPACT ═══════════════════ -->
         <div class="slide" data-slide="3">
-            <div class="full-center">
-                <div class="section-label anim-1">MCP Interface</div>
-                <h2 class="section-title anim-2">10 tools. One protocol.</h2>
-                <p class="section-subtitle anim-3">Claude Code calls these tools natively &mdash; no plugins, no wrappers.</p>
+            <div class="full-center" style="margin-bottom: 0;">
+                <div class="section-label anim-1">Benchmarked Performance</div>
+                <h2 class="section-title anim-2">Measured impact, <span style="color:var(--accent-emerald);">not promises</span></h2>
+                <p class="section-subtitle anim-3" style="font-size:15px;">Validated against Pure Claude on 25-document investor package with 5 real-world queries.</p>
             </div>
-            <div class="tools-grid">
-                <div class="tool-item anim-4">
-                    <span class="tool-dot tool-dot--green"></span>
-                    <span class="tool-name">ping</span>
-                    <span class="tool-desc">Health check</span>
+            <div class="metrics-hero">
+                <div class="metric-big anim-4" style="border-color:rgba(34,211,238,0.15);">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-cyan),var(--accent-blue));"></div>
+                    <div class="metric-unit" style="color:var(--accent-cyan);">Query Speed</div>
+                    <div class="metric-num" style="color:var(--accent-cyan);">400x</div>
+                    <div class="metric-unit" style="color:var(--text-muted);">faster</div>
+                    <div class="metric-desc">0.06s average vs 25s with Pure Claude</div>
+                    <div class="metric-comparison" style="color:var(--accent-cyan);background:rgba(34,211,238,0.08);border:1px solid rgba(34,211,238,0.2);">
+                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Sub-second responses
+                    </div>
                 </div>
-                <div class="tool-item anim-4">
-                    <span class="tool-dot tool-dot--blue"></span>
-                    <span class="tool-name">load_project</span>
-                    <span class="tool-desc">Ingest docs</span>
+                <div class="metric-big anim-5" style="border-color:rgba(139,92,246,0.15);">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-violet),var(--accent-blue));"></div>
+                    <div class="metric-unit" style="color:var(--accent-violet);">Token Usage</div>
+                    <div class="metric-num" style="color:var(--accent-violet);">70%</div>
+                    <div class="metric-unit" style="color:var(--text-muted);">reduction</div>
+                    <div class="metric-desc">11.5K tokens vs 32-40K with Pure Claude</div>
+                    <div class="metric-comparison" style="color:var(--accent-violet);background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);">
+                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        $200-250/mo saved
+                    </div>
                 </div>
-                <div class="tool-item anim-5">
-                    <span class="tool-dot tool-dot--cyan"></span>
-                    <span class="tool-name">knowledge_call</span>
-                    <span class="tool-desc">Hybrid search</span>
+                <div class="metric-big anim-6" style="border-color:rgba(52,211,153,0.15);">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-emerald),var(--accent-cyan));"></div>
+                    <div class="metric-unit" style="color:var(--accent-emerald);">Answer Quality</div>
+                    <div class="metric-num" style="color:var(--accent-emerald);">95%</div>
+                    <div class="metric-unit" style="color:var(--text-muted);">accuracy</div>
+                    <div class="metric-desc">+9% higher than Pure Claude (86% baseline)</div>
+                    <div class="metric-comparison" style="color:var(--accent-emerald);background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.2);">
+                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Grade A overall
+                    </div>
                 </div>
-                <div class="tool-item anim-5">
-                    <span class="tool-dot tool-dot--cyan"></span>
-                    <span class="tool-name">store_extraction</span>
-                    <span class="tool-desc">Add entities</span>
+            </div>
+            <div class="metrics-bottom">
+                <div class="metric-sm anim-7">
+                    <div class="metric-sm-num" style="color:var(--accent-blue);">62%</div>
+                    <div class="metric-sm-label">Fewer tool calls<br><span style="color:var(--text-muted);">6 vs 16</span></div>
                 </div>
-                <div class="tool-item anim-6">
-                    <span class="tool-dot tool-dot--amber"></span>
-                    <span class="tool-name">synchronize_project</span>
-                    <span class="tool-desc">Detect drift</span>
+                <div class="metric-sm anim-8">
+                    <div class="metric-sm-num" style="color:var(--accent-amber);">99%</div>
+                    <div class="metric-sm-label">Audit time reduction<br><span style="color:var(--text-muted);">hours &rarr; seconds</span></div>
                 </div>
-                <div class="tool-item anim-6">
-                    <span class="tool-dot tool-dot--violet"></span>
-                    <span class="tool-name">merge_report</span>
-                    <span class="tool-desc">Propose changes</span>
+                <div class="metric-sm anim-9">
+                    <div class="metric-sm-num" style="color:var(--accent-rose);">28</div>
+                    <div class="metric-sm-label">Issues caught<br><span style="color:var(--text-muted);">invisible manually</span></div>
                 </div>
-                <div class="tool-item anim-7">
-                    <span class="tool-dot tool-dot--violet"></span>
-                    <span class="tool-name">approve_merge</span>
-                    <span class="tool-desc">User-controlled</span>
-                </div>
-                <div class="tool-item anim-7">
-                    <span class="tool-dot tool-dot--green"></span>
-                    <span class="tool-name">commit_changes</span>
-                    <span class="tool-desc">Audit trail</span>
-                </div>
-                <div class="tool-item anim-8">
-                    <span class="tool-dot tool-dot--blue"></span>
-                    <span class="tool-name">get_commit_history</span>
-                    <span class="tool-desc">Query history</span>
+                <div class="metric-sm anim-10">
+                    <div class="metric-sm-num" style="color:var(--accent-cyan);">0</div>
+                    <div class="metric-sm-label">False positives<br><span style="color:var(--text-muted);">entity-focused</span></div>
                 </div>
             </div>
         </div>
@@ -1274,129 +1280,8 @@
             </div>
         </div>
 
-        <!-- ═══════════════════ SLIDE 9: MEASURED IMPACT ═══════════════════ -->
+        <!-- ═══════════════════ SLIDE 9: BUSINESS VALUE ═══════════════════ -->
         <div class="slide" data-slide="8">
-            <div class="full-center" style="margin-bottom: 0;">
-                <div class="section-label anim-1">Benchmarked Performance</div>
-                <h2 class="section-title anim-2">Measured impact, <span style="color:var(--accent-emerald);">not promises</span></h2>
-                <p class="section-subtitle anim-3" style="font-size:15px;">Validated against Pure Claude on 25-document investor package with 5 real-world queries.</p>
-            </div>
-            <div class="metrics-hero">
-                <div class="metric-big anim-4" style="border-color:rgba(34,211,238,0.15);">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-cyan),var(--accent-blue));"></div>
-                    <div class="metric-unit" style="color:var(--accent-cyan);">Query Speed</div>
-                    <div class="metric-num" style="color:var(--accent-cyan);">400x</div>
-                    <div class="metric-unit" style="color:var(--text-muted);">faster</div>
-                    <div class="metric-desc">0.06s average vs 25s with Pure Claude</div>
-                    <div class="metric-comparison" style="color:var(--accent-cyan);background:rgba(34,211,238,0.08);border:1px solid rgba(34,211,238,0.2);">
-                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        Sub-second responses
-                    </div>
-                </div>
-                <div class="metric-big anim-5" style="border-color:rgba(139,92,246,0.15);">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-violet),var(--accent-blue));"></div>
-                    <div class="metric-unit" style="color:var(--accent-violet);">Token Usage</div>
-                    <div class="metric-num" style="color:var(--accent-violet);">70%</div>
-                    <div class="metric-unit" style="color:var(--text-muted);">reduction</div>
-                    <div class="metric-desc">11.5K tokens vs 32-40K with Pure Claude</div>
-                    <div class="metric-comparison" style="color:var(--accent-violet);background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);">
-                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        $200-250/mo saved
-                    </div>
-                </div>
-                <div class="metric-big anim-6" style="border-color:rgba(52,211,153,0.15);">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent-emerald),var(--accent-cyan));"></div>
-                    <div class="metric-unit" style="color:var(--accent-emerald);">Answer Quality</div>
-                    <div class="metric-num" style="color:var(--accent-emerald);">95%</div>
-                    <div class="metric-unit" style="color:var(--text-muted);">accuracy</div>
-                    <div class="metric-desc">+9% higher than Pure Claude (86% baseline)</div>
-                    <div class="metric-comparison" style="color:var(--accent-emerald);background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.2);">
-                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        Grade A overall
-                    </div>
-                </div>
-            </div>
-            <div class="metrics-bottom">
-                <div class="metric-sm anim-7">
-                    <div class="metric-sm-num" style="color:var(--accent-blue);">62%</div>
-                    <div class="metric-sm-label">Fewer tool calls<br><span style="color:var(--text-muted);">6 vs 16</span></div>
-                </div>
-                <div class="metric-sm anim-8">
-                    <div class="metric-sm-num" style="color:var(--accent-amber);">99%</div>
-                    <div class="metric-sm-label">Audit time reduction<br><span style="color:var(--text-muted);">hours &rarr; seconds</span></div>
-                </div>
-                <div class="metric-sm anim-9">
-                    <div class="metric-sm-num" style="color:var(--accent-rose);">28</div>
-                    <div class="metric-sm-label">Issues caught<br><span style="color:var(--text-muted);">invisible manually</span></div>
-                </div>
-                <div class="metric-sm anim-10">
-                    <div class="metric-sm-num" style="color:var(--accent-cyan);">0</div>
-                    <div class="metric-sm-label">False positives<br><span style="color:var(--text-muted);">entity-focused</span></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ═══════════════════ SLIDE 10: TECH STACK ═══════════════════ -->
-        <div class="slide" data-slide="9">
-            <div class="full-center">
-                <div class="section-label anim-1">Tech Stack</div>
-                <h2 class="section-title anim-2">Minimal dependencies. Maximum power.</h2>
-            </div>
-            <div class="stack-grid">
-                <div class="stack-item anim-3">
-                    <div class="stack-icon" style="background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.2);">
-                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="var(--accent-emerald)" stroke-width="2"/><path d="M12 6v6l4 2" stroke="var(--accent-emerald)" stroke-width="2" stroke-linecap="round"/></svg>
-                    </div>
-                    <div class="stack-name">Neo4j 5.x</div>
-                    <div class="stack-detail">Knowledge graph</div>
-                </div>
-                <div class="stack-item anim-4">
-                    <div class="stack-icon" style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);">
-                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--accent-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <div class="stack-name">Python MCP</div>
-                    <div class="stack-detail">Server runtime</div>
-                </div>
-                <div class="stack-item anim-5">
-                    <div class="stack-icon" style="background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.2);">
-                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="var(--accent-amber)" stroke-width="2"/><path d="M9 9h6M9 12h6M9 15h3" stroke="var(--accent-amber)" stroke-width="2" stroke-linecap="round"/></svg>
-                    </div>
-                    <div class="stack-name">NVIDIA CUDA</div>
-                    <div class="stack-detail">GPU embeddings</div>
-                </div>
-                <div class="stack-item anim-6">
-                    <div class="stack-icon" style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);">
-                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="var(--accent-violet)" stroke-width="2"/></svg>
-                    </div>
-                    <div class="stack-name">Transformers</div>
-                    <div class="stack-detail">MiniLM-L6-v2</div>
-                </div>
-                <div class="stack-item anim-7">
-                    <div class="stack-icon" style="background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.2);">
-                        <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13.8 12H3" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
-                    <div class="stack-name">Claude Code</div>
-                    <div class="stack-detail">AI interface</div>
-                </div>
-            </div>
-            <div class="stack-bottom">
-                <div class="anim-8">
-                    <span class="pill pill--cyan">4 Python packages</span>
-                </div>
-                <div class="anim-8">
-                    <span class="pill pill--emerald">5-step setup</span>
-                </div>
-                <div class="anim-8">
-                    <span class="pill pill--violet">384-dim embeddings</span>
-                </div>
-                <div class="anim-8">
-                    <span class="pill pill--blue">Cosine similarity</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- ═══════════════════ SLIDE 11: BUSINESS VALUE ═══════════════════ -->
-        <div class="slide" data-slide="10">
             <div class="full-center" style="margin-bottom: 8px;">
                 <div class="section-label anim-1">Business Value</div>
                 <h2 class="section-title anim-2">Why your business needs this</h2>
@@ -1450,8 +1335,8 @@
             </div>
         </div>
 
-        <!-- ═══════════════════ SLIDE 12: CTA ═══════════════════ -->
-        <div class="slide" data-slide="11">
+        <!-- ═══════════════════ SLIDE 10: CTA ═══════════════════ -->
+        <div class="slide" data-slide="9">
             <div class="cta-wrap">
                 <div class="section-label anim-1">Open Source</div>
                 <h2 class="cta-title anim-2">Give Claude Code<br>a <em>brain</em> for your business</h2>
